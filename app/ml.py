@@ -31,4 +31,4 @@ async def song_choice(song_id):
     song = np.array(song).reshape(1, -1)
     result = df_selected.iloc[nn.kneighbors(song)[1][0][1:11]].to_json(orient="records")  # Return results as json
     parsed = json.loads(result)
-    return json.dumps(parsed, indent=2)
+    return json.dumps(parsed, indent=3)
