@@ -6,13 +6,28 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-flask = "*"
+flake8 = "*"
+flake8-docstrings = "*"
+jupyter = "*"
+pep8-naming = "*"
+pytest = "*"
+requests = "*"
 pandas = "*"
 flask-sqlalchemy = "*"
 gunicorn = "*"
 sklearn = "*"
 numpy = "*"
 matplotlib = "*"
+
+[packages]
+fastapi = "*"
+pandas = "*"
+plotly = "*"
+sqlalchemy = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+flask = "*"
+matplotlib = "*"
+scikit-learn = "*"
 
 [requires]
 python_version = "3.7"
